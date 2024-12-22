@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: #cacaca;
+  margin : 0 15rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection styles */
+::selection {
+  background-color: #cacaca; /* Tailwind gray-600 */
+  color: #cacaca; /* Tailwind #cacaca */
+}
+
+/* Firefox support */
+::-moz-selection {
+  background-color: #cacaca; /* Tailwind gray-600 */
+  color: #cacaca; /* Tailwind #cacaca */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
