@@ -1,5 +1,5 @@
 import TextTyper from './components/switchingtext/page';
-import ExternalLink from './components/externalLinks/page';
+import ExternalLink from './components/externalLinks/EksternalLinks';
 import Link from 'next/link';
 import Image from 'next/image'
 
