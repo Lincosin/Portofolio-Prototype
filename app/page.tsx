@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             
             <div>
-              <p className='font-bold lg:text-5xl sm:text-base -mb-[33%] lg:-mt-10 sm:mt-0'>Hello <span className='text-[#186F3B] lg:text-9xl sm:text-5xl'>I'm Willy</span>
+              <p className='font-bold lg:text-5xl sm:text-base -mb-[33%] lg:-mt-10 sm:mt-0'>Hello <span className='text-[#186F3B] lg:text-9xl sm:text-5xl'>I&apos;m Willy</span>
               </p>
               <div className="text-black font-bold lg:text-7xl flex justify-start mt-[35%] sm:text-sm">
               <TextTyper />
@@ -99,10 +99,10 @@ export default function Home() {
             </div>
 
             {/* project 2 */}
-            <a href="/Projek Akhir/index.html" className="external-link" rel="noopener noreferrer">
+            <a href="/Projek Akhir" className="external-link" rel="noopener noreferrer">
               <div className="flex justify-center mt-20 p-10 pb-0">
                 <Image 
-                  src="/project-1.png" 
+                  src="/src/img/project-1.png" 
                   alt="School Website Project" 
                   width={1000} 
                   height={300} 
