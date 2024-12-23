@@ -79,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className='-mt-[30rem] ml-10 font-light'>
-            <p>Here are some projects I have done, except Reduktor (It was a Team Project)</p>
+            Here are some projects I have done, except Reduktor (It was a Team Project)
           </div>
         
           <div className='flex flex-col gap-36'>
@@ -87,22 +87,31 @@ export default function Home() {
             <div>
               <ExternalLink href="https://www.reduktordev.org/">
               <div className=' flex justify-center mx-10 mt-16 pb-0' title='Spam W in the Chat!'>
-                <Image src="/src/img/reduk.png" alt="Description of the image" width={1000} height={300}  />
+                <Image 
+                  src="/src/img/reduk.png" 
+                  alt="Description of the image" 
+                  width={1000} 
+                  height={300}  
+                />
               </div>
                 <span className='font-light text-xl ml-10 hover:text-[#186F3B]' title='Spam W in the Chat!'>Reduktor Team</span>
               </ExternalLink>
             </div>
 
             {/* project 2 */}
-            <div>
-            <Link href="Projek Akhir/index.html" target='_blank' title='I know this is bad, you can laugh about this'>
-              <div className=' flex justify-center mt-20 p-10 pb-0'>
-                <Image src="/src/img/project 1.png" alt="Description of the image" width={1000} height={300} />
+            <a href="/Projek Akhir/index.html" className="external-link" rel="noopener noreferrer">
+              <div className="flex justify-center mt-20 p-10 pb-0">
+                <Image 
+                  src="/project-1.png" 
+                  alt="School Website Project" 
+                  width={1000} 
+                  height={300} 
+                />
               </div>
-              
-                <span className='font-light text-xl ml-10 hover:text-[#186F3B] sm:text-sm'> My Vocational Schools Website (Unfinished)</span>
-              </Link>
-            </div>
+              <span className='font-light text-xl ml-10 hover:text-[#186F3B] sm:text-sm'>
+                My Vocational Schools Website (Unfinished)
+              </span>
+            </a>
           </div>
 
           <div>
@@ -117,7 +126,7 @@ export default function Home() {
           </div>
 
           <div className='-mt-[30rem] ml-10 font-light'>
-            <p>Here, I like to share a short list of some of my favorite songs that I've been listening to lately.</p>
+            Here, I like to share a short list of some of my favorite songs that I've been listening to lately.
           </div>
 
           <div className='ml-10'>
@@ -138,7 +147,7 @@ export default function Home() {
         </div>
 
         <footer>
-          &copy 2024
+          &copy; 2024
         </footer>
       
   </main>
