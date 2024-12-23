@@ -1,6 +1,7 @@
 import TextTyper from './components/switchingtext/page';
 import ExternalLink from './components/externalLinks/page';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -78,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className='-mt-[30rem] ml-10 font-light'>
-            <p>Here are some projects I have done, except Reduktor (because it was Team Project) :)</p>
+            <p>Here are some projects I have done, except Reduktor (It was a Team Project)</p>
           </div>
         
           <div className='flex flex-col gap-36'>
@@ -86,7 +87,7 @@ export default function Home() {
             <div>
               <ExternalLink href="https://www.reduktordev.org/">
               <div className=' flex justify-center mx-10 mt-16 pb-0' title='Spam W in the Chat!'>
-                <img src="src/img/reduk.png" alt="Description of the image" width="100%" height={300}  />
+                <Image src="/src/img/reduk.png" alt="Description of the image" width={1000} height={300}  />
               </div>
                 <span className='font-light text-xl ml-10 hover:text-[#186F3B]' title='Spam W in the Chat!'>Reduktor Team</span>
               </ExternalLink>
@@ -96,7 +97,7 @@ export default function Home() {
             <div>
             <Link href="Projek Akhir/index.html" target='_blank' title='I know this is bad, you can laugh about this'>
               <div className=' flex justify-center mt-20 p-10 pb-0'>
-                <img src="src/img/project 1.png" alt="Description of the image" width="100%" height={300} />
+                <Image src="/src/img/project 1.png" alt="Description of the image" width={1000} height={300} />
               </div>
               
                 <span className='font-light text-xl ml-10 hover:text-[#186F3B] sm:text-sm'> My Vocational Schools Website (Unfinished)</span>
