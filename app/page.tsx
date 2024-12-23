@@ -89,9 +89,10 @@ export default function Home() {
               <div className=' flex justify-center mx-10 mt-16 pb-0' title='Spam W in the Chat!'>
                 <Image 
                   src="/src/img/reduk.png" 
-                  alt="Description of the image" 
+                  alt="Reduktor" 
                   width={1000} 
-                  height={300}  
+                  height={300}
+                  priority  
                 />
               </div>
                 <span className='font-light text-xl ml-10 hover:text-[#186F3B]' title='Spam W in the Chat!'>Reduktor Team</span>
