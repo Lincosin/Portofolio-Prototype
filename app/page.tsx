@@ -1,6 +1,5 @@
 import TextTyper from './components/switchingtext/page';
 import ExternalLink from './components/externalLinks/EksternalLinks';
-import Link from 'next/link';
 import Image from 'next/image'
 
 export default function Home() {
@@ -35,7 +34,10 @@ export default function Home() {
             </div>
             
             <div>
-              <p className='font-bold lg:text-5xl sm:text-base -mb-[33%] lg:-mt-10 sm:mt-0'>Hello <span className='text-[#186F3B] lg:text-9xl sm:text-5xl'>I&apos;m Willy</span>
+              <p 
+                className='font-bold lg:text-5xl sm:text-base -mb-[33%] lg:-mt-10 sm:mt-0'>Hello 
+                <span className='text-[#186F3B] lg:text-9xl sm:text-5xl'>I&apos;m Willy
+                </span>
               </p>
               <div className="text-black font-bold lg:text-7xl flex justify-start mt-[35%] sm:text-sm">
               <TextTyper />
@@ -127,7 +129,7 @@ export default function Home() {
           </div>
 
           <div className='-mt-[30rem] ml-10 font-light'>
-            Here, I like to share a short list of some of my favorite songs that I've been listening to lately.
+            Here, I like to share a short list of some of my favorite songs that I&apos;ve been listening to lately.
           </div>
 
           <div className='ml-10'>
@@ -140,8 +142,7 @@ export default function Home() {
               <li><a href="https://open.spotify.com/track/42si4ikg5dh732gPuQ0xHb?si=8d3dfc418e694ff4" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>C.H.R.I.S.Y.E. - Diskoria</a></li>
               <li><a href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=ff719b3504294c3f" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>comedy - Gen hoshino</a></li>
               <li><a href="https://open.spotify.com/track/0cXm3QqepHVzXKdm73sqkl?si=069e82409a0b4d15" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Beetlebum - Blur</a></li>
-              <li><a href="https://open.spotify.com/track/4RAOI1etsgbh5NP3T5R8rN?si=100af129ea73498b" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>I Don't Love You - My Chemical Romance</a></li>
-              <li><a href="https://open.spotify.com/track/3drQLSnECw7QSHMysFqFx7?si=aafe3f450a024d06" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Walkaway - Cast</a></li>
+              <li><a href="https://open.spotify.com/track/4RAOI1etsgbh5NP3T5R8rN?si=100af129ea73498b" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>I Don&apos;t Love You - My Chemical Romance</a></li>
               <li><a href="https://open.spotify.com/track/4WiiRw2PHMNQE0ad6y6GdD?si=888f4ad46fce4296" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Chocolate - The 1975</a></li>
             </ul>
           </div>
