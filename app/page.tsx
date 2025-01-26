@@ -6,7 +6,23 @@ export default function Home() {
   return (
   <main className="sm:m-0">
       {/* Navbar */}
-      <nav className="bg-opacity-30 sticky bg-[#ffffff] backdrop-blur-lg rounded-3xl shadow-inner py-3 flex justify-between items-center lg:w-[500px] sm:w-12 px-8 lg:max-w-[700px] sm:max-w-[50px] mx-auto top-8">
+      <nav className="
+          bg-opacity-30 
+          sticky bg-[#ffffff] 
+          backdrop-blur-lg 
+          rounded-3xl 
+          shadow-inner 
+          py-3 flex 
+          justify-between 
+          items-center 
+          lg:w-[500px] 
+          sm:w-12 
+          px-8 
+          lg:max-w-[700px] 
+          sm:max-w-[50px] 
+          mx-auto 
+          top-8"
+        >
         {/* Logo */}
         <a className="font-bold text-xl" href="#00">
           /
@@ -148,8 +164,12 @@ export default function Home() {
           </div>
         </div>
 
+        <script>
+          $('#spanYear').html(new Date().getFullYear());
+        </script>
+
         <footer>
-          &copy; 2024
+          &copy; <span id="spanYear"></span >
         </footer>
       
   </main>
