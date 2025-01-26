@@ -169,7 +169,7 @@ export default function Home() {
         </script>
 
         <footer>
-          &copy; <span id="spanYear"></span >
+          &copy; <span id='spanYear'></span >
         </footer>
       
   </main>
