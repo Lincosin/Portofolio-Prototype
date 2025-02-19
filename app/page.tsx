@@ -1,6 +1,10 @@
 import TextTyper from './components/switchingtext/page';
+import Year from './components/year/page';
 import ExternalLink from './components/externalLinks/EksternalLinks';
 import Image from 'next/image'
+import Link from "next/link";
+import MusicPlayer from './components/music/page';
+
 
 export default function Home() {
   return (
@@ -13,12 +17,20 @@ export default function Home() {
         </a>
 
         {/* Menu */}
-        <ul className="flex lg:space-x-10 sm:px-10">
+        <ul 
+        className="
+        flex 
+        lg:space-x-10 
+        sm:px-10
+        ">
           <li>
-            <a href="#01" className="hover:text-[#186F3B]">Projects</a>
+            <a href="#01" className="hover:text-[#186F3B]">Skills</a>            
           </li>
           <li>
-            <a href="#02" className="hover:text-[#186F3B]">Fun</a>
+            <a href="#02" className="hover:text-[#186F3B]">Projects</a>
+          </li>
+          <li>
+            <a href="#03" className="hover:text-[#186F3B]">Fun</a>
           </li>
         </ul>
       </nav>
@@ -35,8 +47,8 @@ export default function Home() {
             
             <div>
               <p 
-                className='font-bold lg:text-5xl sm:text-base -mb-[33%] lg:-mt-10 sm:mt-0'>Hello 
-                <span className='text-[#186F3B] lg:text-9xl sm:text-5xl'>I&apos;m Willy
+                className='font-bold lg:text-5xl sm:text-base -mb-[33%] lg:-mt-10 sm:mt-0'>Hello
+                <span className='text-[#186F3B] lg:text-9xl sm:text-5xl ml-2'>I&apos;m Willy
                 </span>
               </p>
               <div className="text-black font-bold lg:text-7xl flex justify-start mt-[35%] sm:text-sm">
@@ -69,23 +81,34 @@ export default function Home() {
           </div>
         </div>
         
+        <div 
+        id='01'
+        className='flex justify-center mt-20 p-10 pb-0'>
 
+        </div>
           
-        
+        <div id="01" className="mb-96">
+          <div className="h-[550px] flex items-start ml-10">
+            <p className="font-medium opacity-[50%]">01. <span className='text-[#186F3B]'>Skills</span></p>
+            <div className="h-px mt-3 bg-gray-400 ml-4 w-[85%]"></div>
+          </div>
+
+          <MusicPlayer />
+
+        </div>
 
         {/* Projects */}
-        <div id="01" className='mb-96'>
+        <div id="02" className='mb-96'>
           <div className="h-[550px] flex items-start ml-10">
-            <p className="font-medium opacity-[50%]">01. <span className='text-[#186F3B]'>Projects</span></p>
+            <p className="font-medium opacity-[50%]">02. <span className='text-[#186F3B]'>Projects</span></p>
             <div className="h-px mt-3 bg-gray-400 ml-4 w-[85%]"></div>
           </div>
 
           <div className='-mt-[30rem] ml-10 font-light'>
-            Here are some projects I have done, except Reduktor (It was a Team Project)
+            Here are some projects I have done
           </div>
         
-          <div className='flex flex-col gap-36'>
-            {/* project 1 */}
+          {/* <div className='flex flex-col gap-36'>
             <div>
               <ExternalLink href="https://www.reduktordev.org/">
               <div className=' flex justify-center mx-10 mt-16 pb-0' title='Spam W in the Chat!'>
@@ -101,7 +124,6 @@ export default function Home() {
               </ExternalLink>
             </div>
 
-            {/* project 2 */}
             <a href="/Projek Akhir" className="external-link" rel="noopener noreferrer">
               <div className="flex justify-center mt-20 p-10 pb-0">
                 <Image 
@@ -115,43 +137,52 @@ export default function Home() {
                 My Vocational Schools Website (Unfinished)
               </span>
             </a>
-          </div>
+          </div> */}
 
           <div>
             <p className='font-normal text-xl flex justify-center align-middle mt-[300px]'><span className='text-[#186F3B]'>Stay tuned</span>, other projects coming soon!</p>
           </div>
         </div>
 
-        <div id="02" className="mb-96">
+        <div id="03" className="mb-96">
           <div className="h-[550px] flex items-start ml-10">
             <p className="font-medium opacity-[50%]">02. <span className='text-[#186F3B]'>Fun</span></p>
             <div className="h-px mt-3 bg-gray-400 ml-4 w-[85%]"></div>
           </div>
 
-          <div className='-mt-[30rem] ml-10 font-light'>
-            Here, I like to share a short list of some of my favorite songs that I&apos;ve been listening to lately.
-          </div>
+          <div className='-mt-[30rem]'>
+              <p className='ml-10 font-light'>
+                Get to know me better!
+              </p>
+              <div className=' ml-10 font-light'>
+                Here, I like to share a short list of some of my favorite songs that I&apos;ve been listening to lately.
+              </div>
 
-          <div className='ml-10'>
-            <ul className='font-light ml-10 mt-10 list-square'>
-              <li><a href="https://open.spotify.com/track/7b2zwT2Wf0bwVIpJTiNyt4?si=a3740f7b18ed4470" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Any Other Way - Particle House</a></li>
-              <li><a href="https://open.spotify.com/track/73CKjW3vsUXRpy3NnX4H7F?si=f63c279198d649db" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Fake Plastic Trees - Radiohead</a></li>
-              <li><a href="https://open.spotify.com/track/40l4DYTW2jfArPOL63YogV?si=7336cc8855794c6b" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Driftwood - Travis</a></li>
-              <li><a href="https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ?si=30574c07aa684616" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>The Less I Know The Better - Tame Impala</a></li>
-              <li><a href="https://open.spotify.com/track/5hQll2t2rfpVARhVjDVOYJ?si=69148d97e2354e69" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Oddloop - Frederic</a></li>
-              <li><a href="https://open.spotify.com/track/42si4ikg5dh732gPuQ0xHb?si=8d3dfc418e694ff4" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>C.H.R.I.S.Y.E. - Diskoria</a></li>
-              <li><a href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=ff719b3504294c3f" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>comedy - Gen hoshino</a></li>
-              <li><a href="https://open.spotify.com/track/0cXm3QqepHVzXKdm73sqkl?si=069e82409a0b4d15" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Beetlebum - Blur</a></li>
-              <li><a href="https://open.spotify.com/track/4RAOI1etsgbh5NP3T5R8rN?si=100af129ea73498b" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>I Don&apos;t Love You - My Chemical Romance</a></li>
-              <li><a href="https://open.spotify.com/track/4WiiRw2PHMNQE0ad6y6GdD?si=888f4ad46fce4296" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Chocolate - The 1975</a></li>
-            </ul>
-          </div>
+              <div className='ml-10'>
+                <ul className='font-light ml-10 mt-10 list-square'>
+                  <li><a href="https://open.spotify.com/track/7b2zwT2Wf0bwVIpJTiNyt4?si=a3740f7b18ed4470" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Any Other Way - Particle House</a></li>
+                  <li><a href="https://open.spotify.com/track/73CKjW3vsUXRpy3NnX4H7F?si=f63c279198d649db" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Fake Plastic Trees - Radiohead</a></li>
+                  <li><a href="https://open.spotify.com/track/40l4DYTW2jfArPOL63YogV?si=7336cc8855794c6b" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Driftwood - Travis</a></li>
+                  <li><a href="https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ?si=30574c07aa684616" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>The Less I Know The Better - Tame Impala</a></li>
+                  <li><a href="https://open.spotify.com/track/1XpLT8r6TSEGxonhzAZbfT?si=6fcc183f04bc400c" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Pemain Lama - Wijaya 80</a></li>
+                  <li><a href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=ff719b3504294c3f" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>comedy - Gen hoshino</a></li>
+                  <li><a href="https://open.spotify.com/track/0cXm3QqepHVzXKdm73sqkl?si=069e82409a0b4d15" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Beetlebum - Blur</a></li>
+                  <li><a href="https://open.spotify.com/track/0GgN4MhR5GKn5IcKN0e0rG?si=abb6500684f24f8c" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Cancer - My Chemical Romance</a></li>
+                  <li><a href="https://open.spotify.com/track/4WiiRw2PHMNQE0ad6y6GdD?si=888f4ad46fce4296" target="_blank" className='underline underline-offset-[6px] hover:decoration-dashed'>Chocolate - The 1975</a></li>
+                </ul>
+              </div>
+            </div>
         </div>
 
         <footer>
-          &copy; 2024
+          <div className='relative p-5 mb-10'>
+            <div className='flex justify-left'>&copy; &nbsp; <Year></Year></div>
+            <div className='flex justify-end -mt-7'>
+              <a className='relative hover:text-[#186F3B] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#186F3B] after:transition-all after:duration-300 hover:after:w-full' href="/sillycat/me.html">Spirit Animal</a>
+            </div>
+          </div>
         </footer>
-      
+    
   </main>
   
   );
