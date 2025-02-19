@@ -6,7 +6,7 @@ const texts = [
   'Learning Everything',
   'Loves to Eat',
   'Likes Playing Games',
-  'Lives in Indonesia',
+  'Aku Mau Makan Siang Gratis',
   'Listens to Music Everyday',
   'Loves to Read',
   'Loves to Watch Movies',
