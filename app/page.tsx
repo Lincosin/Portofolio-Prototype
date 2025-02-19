@@ -99,7 +99,7 @@ export default function Home() {
         
         <div 
         id='01'
-        className='flex justify-center mt-20 p-10 pb-0'>
+        className='flex justify-center -mt-[5rem] p-10 pb-0'>
 
         </div>
           
