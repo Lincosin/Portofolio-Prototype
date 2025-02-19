@@ -162,7 +162,7 @@ export default function Home() {
 
         <div id="03" className="mb-96">
           <div className="h-[550px] flex items-start ml-10">
-            <p className="font-medium opacity-[50%]">02. <span className='text-[#186F3B]'>Fun</span></p>
+            <p className="font-medium opacity-[50%]">03. <span className='text-[#186F3B]'>Fun</span></p>
             <div className="h-px mt-3 bg-gray-400 ml-4 w-[85%]"></div>
           </div>
 
