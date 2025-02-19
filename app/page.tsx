@@ -1,8 +1,8 @@
 import TextTyper from './components/switchingtext/page';
 import Year from './components/year/page';
-import ExternalLink from './components/externalLinks/EksternalLinks';
-import Image from 'next/image'
-import Link from "next/link";
+// import ExternalLink from './components/externalLinks/EksternalLinks';
+// import Image from 'next/image'
+// import Link from "next/link";
 import MusicPlayer from './components/music/page';
 
 
