@@ -42,7 +42,7 @@ export default function MusicPlayer() {
         </p>
       )}
       {showText && (
-        <span className="flex justify-center align-middle font-light text-sm p-5">i don't know, sleep and eat maybe ;)</span>
+        <span className="flex justify-center align-middle font-light text-sm p-5">i don&apos;t know, sleep and eat maybe ;)</span>
       )}
 
       {/* Audio elemen */}
